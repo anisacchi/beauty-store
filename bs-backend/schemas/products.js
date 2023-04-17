@@ -37,6 +37,12 @@ export default {
 			type: 'number'
 		},
 		{
+			name: 'category',
+			title: 'Category',
+			type: 'array',
+			of: [{ type: 'string' }]
+		},
+		{
 			name: 'description',
 			title: 'Description',
 			type: 'string'
@@ -51,6 +57,6 @@ export default {
 			name: 'link',
 			title: 'Link',
 			type: 'string'
-		}
+		},
 	]
 }
