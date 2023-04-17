@@ -46,6 +46,11 @@ export default {
 			title: 'Rating',
 			type: 'number',
 			validation: Rule => Rule.min(0).max(5)
+		},
+		{
+			name: 'link',
+			title: 'Link',
+			type: 'string'
 		}
 	]
 }
