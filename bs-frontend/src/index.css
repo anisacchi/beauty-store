@@ -5,7 +5,12 @@
 @tailwind utilities;
 
 @layer base {
-	html {
+	html, body {
 		font-family: 'Gudea', sans-serif;
+		background-color: #FAFAFA;
+	}
+
+	.hide-scrollbar::-webkit-scrollbar {
+		display: none;
 	}
 }

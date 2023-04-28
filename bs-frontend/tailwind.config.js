@@ -24,7 +24,13 @@ module.exports = {
         1000: '#000000',
       },
     },
-    extend: {},
+    extend: {
+      dropShadow: {
+        neutral: '0 8px 24px rgba(97, 97, 97, 0.25)',
+        primary: '0 8px 24px rgba(230, 139, 134, 0.25)',
+        secondary: '0 8px 24px rgba(159, 252, 250, 0.25)',
+      },
+    },
   },
   plugins: [],
 };

@@ -1,9 +1,15 @@
 import React from 'react';
+import { Route, Routes } from 'react-router-dom';
+import UserContext from './context/userContext';
+import { Home, Login } from './pages';
 
-function App() {
-  return (
-    <div className="text-primary-200">App</div>
-  );
-}
+const App = () => (
+  <UserContext>
+    <Routes>
+      <Route path='/login' element={<Login />} />
+      <Route path='/' element={<Home />} />
+    </Routes>
+  </UserContext>
+);
 
 export default App;
