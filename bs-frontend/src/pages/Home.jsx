@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { Footer, Header } from '../layouts';
 import { Highlights, Categories, Products } from '../components';
 import { client } from '../utils/client';
 import { getProducts } from '../utils/data';
@@ -26,11 +25,9 @@ const Home = () => {
 
   return (
     <>
-      <Header />
       <Highlights />
       <Categories />
       <Products products={products} />
-      <Footer />
     </>
   );
 };

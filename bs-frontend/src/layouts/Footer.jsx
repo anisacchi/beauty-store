@@ -14,18 +14,26 @@ const Footer = () => (
       <div className='hidden sm:block pt-5'>Copyright © 2023 Beauty Store</div>
     </div>
     <div className='flex gap-5'>
-      <button type='button' className='p-2 bg-primary-100 rounded-lg'>
-        <TwitterLogo size={24} />
-      </button>
-      <button type='button' className='p-2 bg-primary-100 rounded-lg'>
-        <InstagramLogo size={24} />
-      </button>
-      <button type='button' className='p-2 bg-primary-100 rounded-lg'>
-        <GithubLogo size={24} />
-      </button>
-      <button type='button' className='p-2 bg-primary-100 rounded-lg'>
-        <LinkedinLogo size={24} />
-      </button>
+      <a href='https://twitter.com/anisacchi_p' rel='noopener noreferrer'>
+        <button type='button' className='p-2 bg-primary-100 rounded-lg'>
+          <TwitterLogo size={24} />
+        </button>
+      </a>
+      <a href='https://instagram.com/anisa.__.chi' rel='noopener noreferrer'>
+        <button type='button' className='p-2 bg-primary-100 rounded-lg'>
+          <InstagramLogo size={24} />
+        </button>
+      </a>
+      <a href='https://github.com/anisacchi' rel='noopener noreferrer'>
+        <button type='button' className='p-2 bg-primary-100 rounded-lg'>
+          <GithubLogo size={24} />
+        </button>
+      </a>
+      <a href='https://www.linkedin.com/in/anisa-permatasari-727094235/' rel='noopener noreferrer'>
+        <button type='button' className='p-2 bg-primary-100 rounded-lg'>
+          <LinkedinLogo size={24} />
+        </button>
+      </a>
     </div>
     <div className='sm:hidden'>Copyright © 2023 Beauty Store</div>
   </div>
