@@ -9,3 +9,9 @@ export const getProductById = (productId) => {
 
   return query;
 };
+
+export const getProductsByCategory = (category) => {
+  const query = `*[_type == 'products' && category == ${category}]`;
+
+  return query;
+};

@@ -15,24 +15,24 @@ export const categories = [
     name: 'eyes',
     image: catEyes,
     desc: 'Eyes category',
-    url: '/category/eyes',
+    url: '/products/eyes',
   },
   {
     name: 'face',
     image: catFace,
     desc: 'Face category',
-    url: '/category/face',
+    url: '/products/face',
   },
   {
     name: 'lips',
     image: catLips,
     desc: 'Lips category',
-    url: '/category/lips',
+    url: '/products/lips',
   },
   {
     name: 'tools',
     image: catTools,
     desc: 'Tools category',
-    url: '/category/tools',
+    url: '/products/tools',
   },
 ];

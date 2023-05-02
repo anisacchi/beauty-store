@@ -57,7 +57,7 @@ const Highlights = () => {
 
   return (
     <div
-      className='pt-20 flex w-full justify-center'
+      className='pt-20 pb-4 flex w-full justify-center'
     >
       <swiper-container
         ref={swiperRef}
