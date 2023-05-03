@@ -8,7 +8,7 @@ import {
 import { logo } from '../assets';
 
 const Footer = () => (
-  <div className='px-5 md:px-10 py-10 flex flex-col sm:flex-row gap-5 justify-center sm:justify-between items-center bg-primary-50'>
+  <div className='mt-auto px-5 md:px-10 py-10 flex flex-col sm:flex-row gap-5 justify-center sm:justify-between items-center bg-primary-50'>
     <div>
       <img src={logo} alt='Logo' className='w-48' />
       <div className='hidden sm:block pt-5'>Copyright © 2023 Beauty Store</div>

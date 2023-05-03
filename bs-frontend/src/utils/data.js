@@ -4,14 +4,13 @@ export const getProducts = () => {
   return query;
 };
 
-export const getProductById = (productId) => {
-  const query = `*[_type == 'products' && _id == ${productId}]`;
-
-  return query;
-};
-
-export const getProductsByCategory = (category) => {
-  const query = `*[_type == 'products' && category == ${category}]`;
+export const getProductBySlug = (slug) => {
+  const query = `*[_type == 'products' && slug.current == '${slug}']{
+_id, name, brand, description, images, price, rating, category, link,
+'variants': *[_type == 'variants' && references(^._id)]{
+name, image
+}
+}`;
 
   return query;
 };

@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
-import { Home, Login, Products } from './pages';
+import {
+  DetailProduct, Home, Login, NotFound, Products,
+} from './pages';
 import { Footer, Header } from './layouts';
 import { UserState } from './context/userContext';
 import { getProducts } from './utils/data';
@@ -30,8 +32,10 @@ const App = () => {
       <Header />
       <Routes>
         <Route path='/login' element={<Login />} />
-        <Route path='/*' element={<Home products={products} />} />
+        <Route path='/' element={<Home products={products} />} />
         <Route path='/products/*' element={<Products products={products} />} />
+        <Route path='/product/:id' element={<DetailProduct />} />
+        <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />
     </>

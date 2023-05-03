@@ -8,6 +8,7 @@
 	html, body {
 		font-family: 'Gudea', sans-serif;
 		background-color: #FAFAFA;
+		overflow-x: hidden;
 	}
 
 	.hide-scrollbar::-webkit-scrollbar {

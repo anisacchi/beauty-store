@@ -6,6 +6,7 @@ import catTools from './cat-tools.png';
 export { default as logo } from './bs-logo-1.png';
 export { default as logoRounded } from './bs-logo-2.png';
 export { default as bgVideo } from './beautyStore.mp4';
+export { default as bgNotFound } from './bg-notfound.png';
 export { default as highlight1 } from './highlight-1.png';
 export { default as highlight2 } from './highlight-2.png';
 export { default as highlight3 } from './highlight-3.png';
