@@ -1,8 +1,10 @@
+/* eslint-disable import/no-unresolved */
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { getProductBySlug } from '../utils/data';
 import { client } from '../utils/client';
 import NotFound from './NotFound';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const DetailProduct = () => {
   const { id: slug } = useParams();
@@ -24,9 +26,7 @@ const DetailProduct = () => {
         : (
           <div>
             {product
-              ? (
-                <div>{product.name}</div>
-              )
+              ? ('')
               : <NotFound />}
           </div>
         )}
