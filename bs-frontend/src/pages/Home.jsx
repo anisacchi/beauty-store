@@ -34,7 +34,7 @@ const Home = ({ products }) => {
           </div>
           <div className='pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 justify-items-center'>
             {categories.map((category) => (
-              <Link key={category.name} to={`/product/${category.url}`}>
+              <Link key={category.name} to={`${category.url}`}>
                 <div
                   className='flex justify-center items-center aspect-square w-full bg-neutral-50 border rounded-lg border-primary-100 hover:drop-shadow-primary cursor-pointer'
                 >

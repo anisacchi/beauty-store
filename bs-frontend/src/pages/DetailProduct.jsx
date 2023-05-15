@@ -2,6 +2,7 @@
 /* eslint-disable import/no-unresolved */
 import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
+import { Rings } from 'react-loader-spinner';
 import { getProductBySlug } from '../utils/data';
 import { client } from '../utils/client';
 import NotFound from './NotFound';
@@ -49,7 +50,18 @@ const DetailProduct = () => {
   return (
     <div className='relative pt-20 min-h-full'>
       {loading ? (
-        <div>LOADING</div>
+        <div className='w-full flex justify-center'>
+          <Rings
+            height='100'
+            width='100'
+            color='#E68B86'
+            radius='6'
+            wrapperStyle={{}}
+            wrapperClass=''
+            visible
+            ariaLabel='rings-loading'
+          />
+        </div>
       ) : (
         <div className='w-full h-full'>
           {product ? (

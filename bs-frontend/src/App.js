@@ -3,7 +3,7 @@ import { Route, Routes } from 'react-router-dom';
 import { Toaster } from 'react-hot-toast';
 import {
   Cart,
-  DetailProduct, Home, Login, NotFound, Products,
+  DetailProduct, Home, Login, NotFound, Products, Search,
 } from './pages';
 import { Footer, Header } from './layouts';
 import { UserState } from './context/userContext';
@@ -38,6 +38,7 @@ const App = () => {
         <Route path='/products/*' element={<Products products={products} />} />
         <Route path='/product/:id' element={<DetailProduct />} />
         <Route path='/cart' element={<Cart />} />
+        <Route path='/search/:keyword' element={<Search products={products} />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
       <Footer />

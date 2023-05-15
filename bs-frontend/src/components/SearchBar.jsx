@@ -1,8 +1,16 @@
 import React, { useState } from 'react';
 import { MagnifyingGlass, ArrowLeft } from '@phosphor-icons/react';
+import { useNavigate } from 'react-router-dom';
 
-const Search = () => {
+const SearchBar = () => {
   const [mobileSearchfield, setMobileSearchfield] = useState(false);
+  const [searchInput, setSearchInput] = useState('');
+  const navigate = useNavigate();
+
+  const searchButtonHandler = () => {
+    setSearchInput('');
+    navigate(`/search/${searchInput}`);
+  };
 
   return (
     <>
@@ -17,13 +25,16 @@ const Search = () => {
         <div className='flex border border-neutral-900 rounded-full'>
           <input
             type='search'
+            value={searchInput}
             placeholder='Search product...'
+            onChange={(e) => setSearchInput(e.target.value)}
             className='h-10 px-3 md:w-48 lg:w-60 bg-neutral-50 border-r border-neutral-900 rounded-l-full focus:outline-none focus:border-2 focus:border-primary-100'
           />
           <button
             type='button'
             aria-label='search'
             className='px-4 py-2 rounded-r-full bg-primary-100 text-neutral-900'
+            onClick={() => searchButtonHandler()}
           >
             <MagnifyingGlass size={24} />
           </button>
@@ -38,9 +49,16 @@ const Search = () => {
         >
           <ArrowLeft size={24} />
         </button>
-        <input type='search' placeholder='Search product...' className='block w-full px-4 bg-neutral-50 focus:outline-none' />
+        <input
+          type='search'
+          value={searchInput}
+          placeholder='Search product...'
+          onChange={(e) => setSearchInput(e.target.value)}
+          className='block w-full px-4 bg-neutral-50 focus:outline-none'
+        />
         <button
           type='button'
+          onClick={() => searchButtonHandler()}
           className='flex justify-center items-center gap-2 px-2 py-2 rounded-full text-neutral-900 bg-neutral-50'
         >
           <MagnifyingGlass size={24} />
@@ -51,4 +69,4 @@ const Search = () => {
   );
 };
 
-export default Search;
+export default SearchBar;

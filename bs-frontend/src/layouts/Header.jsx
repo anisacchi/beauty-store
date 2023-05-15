@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ShoppingCart, User } from '@phosphor-icons/react';
-import { Search, UserBar } from '../components';
+import { SearchBar, UserBar } from '../components';
 import { logo, logoRounded } from '../assets';
 import { UserState } from '../context/userContext';
 import { CartState } from '../context/cartContext';
@@ -28,7 +28,7 @@ const Header = () => {
           />
         </Link>
       </div>
-      <Search />
+      <SearchBar />
       <div className='h-full flex gap-4 justify-center items-center md:justify-between'>
         {/* user has logged in */}
         {user && (
