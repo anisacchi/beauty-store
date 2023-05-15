@@ -30,7 +30,7 @@ const Search = () => {
         </div>
       </div>
       {mobileSearchfield && (
-      <div className='absolute top-0 bottom-0 left-0 right-0 flex p-2 bg-neutral-50 border border-primary-100 drop-shadow-primary'>
+      <div className='absolute z-50 top-0 bottom-0 left-0 right-0 flex p-2 bg-neutral-50 border border-primary-100 drop-shadow-primary'>
         <button
           type='button'
           onClick={() => setMobileSearchfield(false)}

@@ -7,13 +7,16 @@ import jwt_decode from 'jwt-decode';
 import { House } from '@phosphor-icons/react';
 import { bgVideo } from '../assets';
 import logo from '../assets/bs-logo-2.png';
+import { UserState } from '../context/userContext';
 
 const Login = () => {
   const navigate = useNavigate();
+  const { setUser } = UserState();
 
   const loginHandler = (response) => {
     const { sub: id, name, picture } = jwt_decode(response.credential);
     localStorage.setItem('user', JSON.stringify({ id, name, picture }));
+    setUser(true);
     navigate('/');
   };
 

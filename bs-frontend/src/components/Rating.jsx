@@ -12,7 +12,7 @@ const Rating = ({ value }) => {
   if (value % 1 !== 0) {
     stars[i - 1] = <StarHalf weight='fill' key={i - 1} />;
   }
-  return (<span className='flex'>{stars}</span>);
+  return (<span className='flex text-primary-200'>{stars}</span>);
 };
 
 Rating.propTypes = {

@@ -10,6 +10,7 @@ export { default as bgNotFound } from './bg-notfound.png';
 export { default as highlight1 } from './highlight-1.png';
 export { default as highlight2 } from './highlight-2.png';
 export { default as highlight3 } from './highlight-3.png';
+export { default as cartEmpty } from './empty-cart.png';
 
 export const categories = [
   {

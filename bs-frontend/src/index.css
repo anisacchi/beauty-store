@@ -15,3 +15,8 @@
 		display: none;
 	}
 }
+
+.swiper-slide-thumb-active img {
+	border: solid 2px #E68B86;
+	border-radius: 4px;
+}

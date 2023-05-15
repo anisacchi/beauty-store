@@ -17,7 +17,7 @@ const UserBar = () => {
   return (
     <>
       <button type='button' className='h-10 w-10' onClick={() => (!toggleUserBar ? setToggleUserBar(true) : setToggleUserBar(false))}>
-        <img src={picture} alt='User Profile' className='rounded-full object-cover' />
+        <img src={picture} alt='User Profile' className='rounded-full object-cover' referrerPolicy='no-referrer' />
       </button>
       {toggleUserBar && (
       <div className='absolute top-16 right-0 p-4 rounded-b-2xl bg-neutral-50'>
